@@ -1,0 +1,40 @@
+input{
+    max-width: 60px;
+    border:none;
+}
+table{
+    border-collapse:collapse;
+    border-color: black;
+}
+tbody{
+    border: 3px solid black;
+}
+th[class=first]{
+	width: 40px;
+}
+th[class=first]:before {
+	content: "";
+    position: absolute;
+    width: 1px;
+    height: 98px;
+    top:30px;
+    left: 10px;
+    background-color: #000;
+    display: block;
+    transform: rotate(-60deg);
+    transform-origin: top;
+    -ms-transform: rotate(-75deg);
+    -ms-transform-origin: top;
+}
+span.title2{
+    position: relative;
+    top: 0px;
+	left:-20px;
+    
+	
+}
+span.title1{
+	position: relative;
+	top: 0px;
+    right: -20px;
+}

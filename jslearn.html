@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script>
+    function displayDate(){
+        document.getElementById("demo").innerHTML = Date();
+    }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        {var a =100;
+        var b = false;
+        var c =200;
+        let d =300;
+        console.log(a>80||c<200&&(b&&d>300));}
+        
+    </script>
+    <script>
+        {var a =100;
+        var b = false;
+        var c =200;
+        let d = 300;
+        console.log(a>80||(c<200&&b)&&d>300);}
+        
+    </script>
+    <script>
+        {var a =100;
+        var b =a >200?666:888;
+        console.log(b)}
+    </script>
+    <script>
+
+        {var a =1;
+        var b ='2';
+        var c =true;
+        var d= a+b+c+d;
+        console.log(d);}
+        {
+            var a =1;
+            var b ='1';
+            console.log(a!=b);
+
+        }
+        {
+            var a =1;
+            var b ='1';
+            console.log(a===b);
+            
+        }
+        {
+            var a =1;
+            var b =2;
+            console.log(a!=b);
+
+        }
+        {var a =100;
+        var b = false;
+        var c =200;
+        var d = 300;
+        console.log(a>80||c<200)}
+        {var a =100;
+        var b = false;
+        var c =200;
+        var d = 300;
+        console.log(a>80||c<200&&b)}
+        {var a =100;
+        var b = false;
+        var c =200;
+        var d = 300;
+        }
+        {
+            var h = new Array;
+            for (var i=1; i<=1000; i++)
+            {
+              
+                    for(j=2;j<i;j++){
+                        if(i%j==0){
+                            h.push(i);
+                            break;
+                        }
+                        
+                    }
+                    
+                
+            }
+            console.log(h)
+
+        }
+        function calYear(){
+            var year = document.getElementById("year").value;
+            year = Number(year);
+            console.log(year)
+            if((year%4==0)&&(year%100!=0)) window.alert("闰年");
+            else window.alert("不是闰年");
+        }
+        function sortThree(){
+            let num=document.getElementById("num1").value.split(",");
+            lenNum =num.length;
+            for(let i=0;i<lenNum-1;i++){
+                for(let j=i+1;j<lenNum;j++){
+                    if(Number(num[i])>Number(num[j])){
+                        console.log(num[j])
+                        var left = Number(num[j])
+                        num[j] = Number(num[i])
+                        num[i] = left
+                        console.log(left)
+                    }
+                }
+                console.log('!!')
+            }
+            console.log('!!')
+            window.alert(num)
+            
+        }
+        function salaryTax(){
+            let tax
+            let salary =document.getElementById("mySalary").value;
+            salary =Number(salary)
+            if (salary<3500){window.alert("i'am sorry to hear that")}
+            else if((salary-3500)<1500){
+                tax = (salary-3500)*0.03
+            }
+            else if((salary-3500)<4500){
+                tax = 1500*0.03+0.1*(salary-5000)
+            
+            }
+            else if((salary-3500)<9000){
+                tax = 1500*0.03+3000*0.1+(salary-8000)*0.2
+            }
+            else if((salary-3500)<35000){
+                tax = 1500*0.03+3000*0.1+4500*0.2+(salary-12500)*0.25
+            }
+            else if ((salary-3500)<55000){
+                tax = 1500*0.03 +3000*0.1+4500*0.2+26000*0.25+(salary-38500)*0.3
+            }
+            else if((salary-3500)<80000){
+                tax = 1500*0.03 +3000*0.1+4500*0.2+26000*0.25+20000*0.3+(salary-58500)*0.35
+
+            }
+            else if((salary-3500)>80000){
+                tax = 1500*0.03 +3000*0.1+4500*0.2+26000*0.25+20000*0.3+25000*0.35+(salary-835000)*0.45
+
+            }
+            window.alert(tax)
+            
+        }
+        function calindex(){
+            let numind = document.getElementById("calindexnum").value.split(",")
+            console.log('ooo')
+            
+            window.alert(Math.pow(numind[0],numind[1]))
+        }
+        function calMoney(){
+            let totalmoney = Number(document.getElementById("money").value)
+            let num20 = parseInt(totalmoney/20)
+            let num10 = parseInt(totalmoney%20/10)
+            let num5 = parseInt(totalmoney%20%10/5)
+            let num2 = parseInt(totalmoney%20%10%5/2)
+            let num1 = parseInt(totalmoney%20%10%5%2)
+            window.alert(num20+' 张20块 '+num10+' 张10块 '+num5+' 张5块 '+num2+' 张2块 '+num1+' 张1块 ')
+        }
+        var authorName = "芝麻开花";
+     	function doSomething() {
+      		 var bookName = "javascript";
+	}
+        doSomething();
+        console.log(authorName);
+        console.log(bookName);
+        
+    </script>
+    <div>
+        <input type="text" id="year">
+        <button onclick="calYear()">查看闰年</button>
+    </div>
+    <div>
+        <input type="text" id="num1">
+        <button onclick="sortThree()">数字排序</button>
+    </div>
+    <div>
+        <input type="text" id="mySalary">
+        <button onclick="salaryTax()">缴税计算</button>
+    </div>
+    <div>
+        <input type="text" id ="calindexnum">
+        <button onclick="calindex()">指数计算器</button>
+    </div>
+    <div>
+        <input type="text" id="money">
+        <button onclick="calMoney()">计算面额</button>
+    </div>
+    
+
+
+
+    
+        
+</body>
+</html>

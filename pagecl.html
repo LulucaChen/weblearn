@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script type="text/javascript" src="wangEditor.js"></script>
+		<title></title>
+	</head>
+	<body>
+			
+		<div class="login">
+				<div style="display: inline;" >
+						<input type="checkbox" name="hobby" value="singing" style="display: inline-block;width: 5%;vertical-align: middle"/>	
+						<label style="display: inline-block;vertical-align: middle">用户信息</label>
+					</div>
+			<form>
+				
+				<div class="username">
+					<label>用户名称</label>
+					<input type="text" name="username" placeholder="鹿怒鹿怒鹿"/>
+                </div>
+                <div class="code">
+					<label>用户密码</label>
+					<input type="text" name="username"/>
+                </div>
+                <div class="makesure">
+					<label>确认密码</label>
+					<input type="text" name="username"/>
+				</div>
+				<div class="birthday">
+					<label for="meeting">出生日期</label>
+					<input id="meeting" type="date" value="2014-01-13"/>
+				</div>
+                <div class="myblog">
+					<label>我的博客</label>
+					<input type="text" name="username"/>
+                </div>
+                <div class="email">
+					<label>电子邮箱</label>
+					<input type="text" name="username"/>
+				</div>
+				<div class="sex">
+					<label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp性别</label>
+					<input type="radio" name="sex" value="men"/>男
+					<input type="radio" name="sex" value="women"/>女
+				</div>
+				<div class="hobby">
+					<label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp爱好</label>
+					<input type="checkbox" name="hobby" value="singing" />篮球
+					<input type="checkbox" name="hobby" value="writing" />足球
+				</div>
+				<div class="homeland">
+					<label>用户家乡</label>
+					<select>
+						<option value ="volvo">Volvo</option>
+						<option value ="saab">Saab</option>
+						<option value="opel">Opel</option>
+						<option value="audi">Audi</option>
+					</select>
+				</div>
+				<div class="text-out">
+					<label class="last">个人说明</label>
+					<div class="text-in">
+						<div id="div1" class="toolbar" style="background-color: #b3d1e9;padding: 0 0"></div>
+						<div id="div2" class="text" style="background-color: white;height: 200px;"> <!--可使用 min-height 实现编辑区域自动增加高度--></div>
+					</div>
+				</div>
+				
+			</form>
+			<div class="submit-next" style="float: right;margin-top: 10px">
+				<button style="background-color: #f5efef;">确定</button>
+				<button style="background-color: #f5efef;margin-left: 10px">取消</button>
+			</div>
+				
+				
+		</div>
+		
+			
+	</body>
+	<script type="text/javascript">
+					var E = window.wangEditor
+					var editor = new E('#editor')
+					// 或者 var editor = new E( document.getElementById('editor') )
+					var editor1 = new E('#div1','#div2') 
+					editor1.customConfig.menus = [
+						'bold',
+						'italic',
+						'underline',
+						'fontSize',  // 字号
+    					'fontName',
+						'justify',
+						'foreColor',  // 文字颜色
+						'backColor',  // 背景颜色
+						'link' // 插入链接
+					] 
+					editor1.customConfig.colors = [
+						'#000000',
+						'#eeece0',
+						'#1c487f',
+						'#4d80bf',
+						'#c24f4a',
+						'#8baa4a',
+						'#7b5ba1',
+						'#46acc8',
+						'#f9963b',
+						'#ffffff'
+					]
+					   editor1.create()
+	</script>
+	<style>
+		
+		body{
+			background: #fff;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			min-height: 100vh;
+			font-size: 10px;
+		}
+		.login{
+			border-radius: 10px;
+            height: 800px;
+            width: 600px;
+			padding:20px;
+			background: #b3ccec;
+		}
+		form{
+			padding: 10px 10px 10px 10px;
+			border:1px solid #979595;
+			margin-top: 3px;
+		}
+		.username,.choose,.code,.makesure,.myblog,.email,.sex,.hobby,.homeland,.birthday{
+			padding-bottom: 10px;
+		}
+		.submit{
+			text-align: center;
+		}
+		.submit button{
+			padding: 0 30px;
+		}
+		.sex input{
+			width: 5%;
+		}
+        input{
+            width: 50%;
+
+        }
+		.text-out{
+			padding-top: 0px 0px 0px 0px;
+		}
+		label.last{
+			display: inline-block;
+			vertical-align: top;
+		}
+		.text-in{
+			top: 0;
+			display: inline-block;
+			border: 1px solid #979595;
+			height: 200px;
+		}
+		.text-button{
+			margin:10px 0px 0px 0px;
+		}
+		.hobby input{
+			width: 5%;
+		}
+		select{
+			width: 25%;
+		}
+
+	</style>
+</html>

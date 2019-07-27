@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <title>Document</title>
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-default" style="margin-bottom: 0px">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                <a class="navbar-brand" href="#" style="padding: 10px 15px 10px 15px">
+                    <img alt="Brand" src="Line.png ">
+                </a>
+                </div>
+                <div>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">guide1</a></li>
+                        <li><a href="#">guide2</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                guide3  
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">jmeter</a></li>
+                                <li><a href="#">EJB</a></li>
+                                <li><a href="#">Jasper Report</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">分离的链接</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">另一个分离的链接</a></li>
+                            </ul>
+                        </li>
+                    </ul> 
+                </div>
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                        <input id='id1' type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default" onclick="myFunction()">提交</button>
+                    
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main role="main">
+            <div class="jumbotron" style="height: 400px">
+                <div class="container">
+                    <h1>欢迎登陆页面！</h1>
+                    <p>这是一个超大屏幕（Jumbotron）的实例。</p>
+                    
+                    <script>
+                        var myArr = ["Google", "Taobao", "Runoob", "Facebook" ];
+                        var theString ='easy!';
+                        var theObj = {
+                            age:"22",
+                            sex:"W",
+                            name:"coco"
+
+                        }
+                        console.log(theObj.name);
+                    </script>
+                    
+                </div>
+                 
+            </div>
+    </main>
+    <div class="container">
+        <div class="row" style="margin: -120px 30px 50px 10px">
+            <div class="col-md-8">
+                <img src="2.jpg" style="width: 100px">
+                <a style="font-size: 20px">游戏名称</a>
+            </div>
+            <div class="col-md-4">
+                <div class="col-md-8">
+                    <div style="float: right">
+                        <button class="btn btn-default" >安卓</button>
+                    </div>
+                    <div style="float: right;clear: both;">
+                        <button class="btn btn-default" >苹果</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="2.jpg" style="width: 100px">
+                </div>
+                
+                
+            </div>
+
+        </div>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <img src="2.jpg" alt="左一图片" style="width: 100%">
+            </div>
+            <div class="col-md-6" style="height: 386px ">
+                <div class="col-md-10">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+                        <li><a data-toggle="tab" href="#menu1">SVN</a></li>
+                        <li><a data-toggle="tab" href="#menu2">iOS</a></li>
+                        <li><a data-toggle="tab" href="#menu3">VB.Net</a></li>
+                        <li><a data-toggle="tab" href="#menu4">VB.Net</a></li>
+                       
+                    </ul>
+                    <div class="tab-content" >
+                        <div id="home" class="tab-pane fade in active">
+                            <div class="list-group" >
+                                <a href="#" class="list-group-item" style="margin-top: 20px">
+                                    <h4 class="list-group-item-heading">
+                                        入门网站包
+                                    </h4>
+                                    <p class="list-group-item-text" style="margin-bottom:30px">
+                                        您将通过网页进行免费域名注册。
+                                    </p>
+                                   
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <h4 class="list-group-item-heading">
+                                        免费域名注册
+                                    </h4>
+                                    <p class="list-group-item-text" style="margin-bottom:30px">
+                                        您将通过网页进行免费域名注册。
+                                    </p>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <h4 class="list-group-item-heading">
+                                        24*7 支持
+                                    </h4>
+                                    <p class="list-group-item-text" style="margin-bottom:30px">
+                                        我们提供 24*7 支持。
+                                    </p>
+                                </a>
+                            </div>
+                                    
+                        </div>
+                        <div id="menu1" class="tab-pane fade">
+                          <h3>菜单 1</h3>
+                          <p>这是菜单 1 显示的内容。这是菜单 1 显示的内容。这是菜单 1 显示的内容。</p>
+                        </div>
+                        <div id="menu2" class="tab-pane fade">
+                          <h3>菜单 2</h3>
+                          <p>这是菜单 2 显示的内容。这是菜单 2 显示的内容。这是菜单 2 显示的内容。</p>
+                        </div>
+                        <div id="menu3" class="tab-pane fade">
+                          <h3>菜单 3</h3>
+                          <p>这是菜单 3 显示的内容。这是菜单 3 显示的内容。这是菜单 3 显示的内容。</p>
+                        </div>
+                        <div id="menu4" class="tab-pane fade">
+                            <h3>菜单 3</h3>
+                            <p>这是菜单 3 显示的内容。这是菜单 3 显示的内容。这是菜单 3 显示的内容。</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-2" style="height: 386px ">
+                    <div class="box" style="height: 386px ">
+                        <button type="button" class="btn btn-default">按钮 1</button>
+                        <button type="button" class="btn btn-default">按钮 2</button>
+                        <button type="button" class="btn btn-default">按钮 1</button>
+                        <button type="button" class="btn btn-default">按钮 2</button>
+                    </div>
+                </div> 
+                
+
+            </div>
+        </div>
+        <div class="row" style="margin-top: 10px">
+            <img src="2.jpg" alt="jpg" class="col-md-4">
+            <img src="2.jpg" alt="jpg" class="col-md-4">
+            <img src="2.jpg" alt="jpg" class="col-md-4">
+
+        </div>
+        <div>
+            <p><h3>游戏相关</h3></p>
+            <ul class="nav navbar-tabs" style="display: flex; flex-direction:row;justify-content:space-around;background-color: rgb(173, 197, 224)">
+                <li class="active"><a herf="#">伙伴介绍</a></li>
+                <li><a herf="#">装备宝库</a></li>
+                <li><a herf="#">宠物介绍</a></li>
+                <li><a herf="#">幻境画廊</a></li>
+            </ul>
+            <hr>
+            <div class="row" style="display: flex;justify-content:center">
+                <div class="col-md-3"  style="display: flex;justify-content: center">
+                    <img src="2.jpg" style="width: 200px" >
+                </div>
+                <div class="col-md-3"  style="display: flex;justify-content: center">
+                    <img src="2.jpg" style="width: 200px" >
+                </div>
+                <div class="col-md-3"  style="display: flex;justify-content: center">
+                    <img src="2.jpg" style="width: 200px" >
+                </div>
+                <div class="col-md-3"  style="display: flex;justify-content: center">
+                    <img src="2.jpg" style="width: 200px">
+                </div>
+
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-3" style="display: flex;justify-content: center">
+                    <img src="2.jpg" style="width: 200px" >
+                </div>
+                <div class="col-md-3" style="display: flex;justify-content: center">
+                    <img src="2.jpg" style="width: 200px" >
+                </div>
+                <div class="col-md-3" style="display: flex;justify-content: center">
+                    <img src="2.jpg" style="width: 200px" >
+                </div>
+                <div class="col-md-3" style="display: flex;justify-content: center">
+                    <img src="2.jpg" style="width: 200px">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer class="container">
+        <div class="row" style="margin-top:10px">
+            <div class="col-md-4" style="display: flex;justify-content: center">
+                <img src="Line.png" style="margin-right: 10px;margin-top: 10px;margin-bottom: 10px;height: 50%">
+                <div>
+                    <p>关注微信动态</p>
+                    <p>了解实时动态</p>
+                </div>
+                
+            </div>
+            <div class="col-md-4" style="display: flex;justify-content: center">
+                <img src="Line.png" style="margin-right: 10px;margin-top: 10px;margin-bottom: 10px;height: 50%">
+                <div>
+                    <p>关注微博动态</p>
+                    <p>了解实时动态</p>
+                </div>
+            </div>
+            <div class="col-md-4" style="display: flex;justify-content: center">
+                    <img src="Line.png" style="margin-right: 10px;margin-top: 10px;margin-bottom: 10px;height: 50%">
+                    <div>
+                        <p>关注微信动态</p>
+                        <p>了解实时动态</p>
+                    </div>
+                </div>
+        </div>
+    </footer>
+</body>
+<script>
+  
+        function myFunction() {
+            console.log(2);
+            var txt = "";
+            
+            if (document.getElementById("id1").validity.rangeOverflow) {
+                txt = "输入的值太大了";
+            }
+            else{
+                txt = "你说的都对";
+            }
+            window.alert(txt);
+            
+        }
+    </script>
+</html>
+<style>
+
+            
+    .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    }
+    a.list-group-item{
+        border: none;
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+        justify-content: space-between;
+    }
+   
+</style>
